@@ -16,8 +16,8 @@ public class Store {
             }
         }
         products++;
-        System.out.printf("Производитель %s добавил на склад 1 товар!", Thread.currentThread().getName());
-        System.out.printf("Теперь на складе %d товаров!", products);
+        System.out.printf("Производитель %s добавил на склад 1 товар!\n", Thread.currentThread().getName());
+        System.out.printf("Теперь на складе %d товаров!\n", products);
         notify();
     }
 
@@ -30,8 +30,8 @@ public class Store {
             }
         }
         products--;
-        System.out.printf("Покупатель %s купил товар!", Thread.currentThread().getName());
-        System.out.printf("Теперь на складе %d товаров!", products);
+        System.out.printf("Покупатель %s купил товар!\n", Thread.currentThread().getName());
+        System.out.printf("Теперь на складе %d товаров!\n", products);
         notify();
     }
 }
